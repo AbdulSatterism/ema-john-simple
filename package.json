@@ -1,5 +1,5 @@
 {
-  "name": "five",
+  "name": "ema-john-simple",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,9 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider && next build && next export",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider && next dev"
   },
   "eslintConfig": {
     "extends": [
